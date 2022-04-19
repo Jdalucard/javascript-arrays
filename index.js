@@ -1,3 +1,4 @@
+
 // sample array of students
 const students = [
   {
@@ -33,4 +34,17 @@ const students = [
 ];
 
 // Write your code here!
-console.log(students);
+
+
+
+for (let i =0 ; i <students.length; i++){
+  document.write (students[i]);
+}
+
+const names = students.map((student) => {
+  return {
+    fullname: student.name + ' ' + student.lastname,
+    age: student.age,
+    course: student.course
+  }
+})
